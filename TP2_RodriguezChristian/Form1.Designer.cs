@@ -34,6 +34,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.lblFiltro = new System.Windows.Forms.Label();
+            this.btnDetalles = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoArticulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,12 +97,23 @@
             this.lblFiltro.TabIndex = 5;
             this.lblFiltro.Text = "Filtrar por nombre:";
             // 
+            // btnDetalles
+            // 
+            this.btnDetalles.Location = new System.Drawing.Point(213, 405);
+            this.btnDetalles.Name = "btnDetalles";
+            this.btnDetalles.Size = new System.Drawing.Size(133, 33);
+            this.btnDetalles.TabIndex = 6;
+            this.btnDetalles.Text = "Ver detalles";
+            this.btnDetalles.UseVisualStyleBackColor = true;
+            this.btnDetalles.Click += new System.EventHandler(this.BtnDetalles_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.lblFiltro);
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.btnEliminar);
@@ -125,6 +137,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.Label lblFiltro;
+        private System.Windows.Forms.Button btnDetalles;
     }
 }
 

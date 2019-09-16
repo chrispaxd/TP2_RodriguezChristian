@@ -49,9 +49,10 @@ namespace TP2_RodriguezChristian
                     Text = "Modificar Articulo";
                     txtNombre.Text = articulo.Nombre;
                     txtDesc.Text = articulo.Descripcion;
-             
+                    txtCodigo.Text = articulo.Codigo;
                     cboCategoria.SelectedValue = articulo.Categoria.Id;
                     cboMarca.SelectedValue = articulo.Marca.Id;
+                    txtUrl.Text = articulo.linkurl;
                     
                 }
 
@@ -71,7 +72,7 @@ namespace TP2_RodriguezChristian
             {
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDesc.Text;
-                articulo.Codigo = Int32.Parse(txtPrecio.Text);
+                articulo.Codigo = txtCodigo.Text;
                 articulo.Precio = Int32.Parse(txtPrecio.Text);
                 articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
                 articulo.Marca = (Marca)cboMarca.SelectedItem;
@@ -99,5 +100,7 @@ namespace TP2_RodriguezChristian
         {
             Dispose();
         }
+
+
     }
 }

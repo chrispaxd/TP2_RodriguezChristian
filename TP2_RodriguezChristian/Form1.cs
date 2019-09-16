@@ -35,6 +35,8 @@ namespace TP2_RodriguezChristian
                 lista = negocio.listar();
                 dgvListadoArticulos.DataSource = lista;
                 dgvListadoArticulos.Columns[0].Visible = false;
+                dgvListadoArticulos.Columns[1].Visible = false;
+                dgvListadoArticulos.Columns[4].Visible = false;
 
             }
             catch (Exception ex)
@@ -110,6 +112,22 @@ namespace TP2_RodriguezChristian
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void BtnDetalles_Click(object sender, EventArgs e)
+        {
+            Articulo detalles;
+            if (dgvListadoArticulos.CurrentRow != null)
+            {
+                detalles = (Articulo)dgvListadoArticulos.CurrentRow.DataBoundItem;
+                frmDetalles frmDetalles = new frmDetalles(detalles);
+                frmDetalles.ShowDialog();
+                cargarDatos();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una fila");
             }
         }
     }

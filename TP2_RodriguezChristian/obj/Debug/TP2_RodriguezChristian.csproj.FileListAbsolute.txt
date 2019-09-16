@@ -14,3 +14,4 @@ C:\Users\Christian\Desktop\Practicando\TP2_RodriguezChristian\TP2_RodriguezChris
 C:\Users\Christian\Desktop\Practicando\TP2_RodriguezChristian\TP2_RodriguezChristianSolucion\TP2_RodriguezChristian\bin\Debug\Negocio.pdb
 C:\Users\Christian\Desktop\Practicando\TP2_RodriguezChristian\TP2_RodriguezChristianSolucion\TP2_RodriguezChristian\obj\Debug\TP2_RodriguezChristian.csproj.CopyComplete
 C:\Users\Christian\Desktop\Practicando\TP2_RodriguezChristian\TP2_RodriguezChristianSolucion\TP2_RodriguezChristian\obj\Debug\TP2_RodriguezChristian.frmAltaArticulo.resources
+C:\Users\Christian\Desktop\Practicando\TP2_RodriguezChristian\TP2_RodriguezChristianSolucion\TP2_RodriguezChristian\obj\Debug\TP2_RodriguezChristian.frmDetalles.resources
